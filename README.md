@@ -1,4 +1,5 @@
-# 🧠 Sistema Inteligente de Criação de Posts
+
+# 🚀 ViraliFy — Criação de Conteúdo com Agentes Inteligentes
 
 > 🚀 Projeto desenvolvido durante a **Imersão IA da Alura + Google Gemini**, com extensão de integração à **API da OpenAI (ChatGPT)** para simular um time de agentes colaborativos criando conteúdo de redes sociais.
 
@@ -20,7 +21,7 @@
 
 ## 📖 Sobre o Projeto
 
-Este projeto simula uma linha de produção inteligente para criação de conteúdo digital.  
+**ViraliFy** simula uma linha de produção inteligente para criação de conteúdo digital.  
 Cada **agente autônomo** tem uma função bem definida, utilizando a API da Google (Gemini) e da OpenAI (ChatGPT via API).  
 O sistema recebe um tópico, passa por planejamento, redação, revisão, engajamento e explicação, e ao final gera um post completo e salva tudo em um arquivo `.txt`.  
 É um exemplo prático de **orquestração de agentes IA** para fins de automação criativa. ✨
@@ -30,8 +31,7 @@ O sistema recebe um tópico, passa por planejamento, redação, revisão, engaja
 ## 🛠️ Estrutura do Projeto
 
 ```
-meu_projeto_agentes/
-├── .env                          # Chaves da API
+ViraliFy/                         # Chaves da API
 ├── main.py                       # Arquivo principal que orquestra os agentes
 ├── requirements.txt              # Bibliotecas necessárias
 ├── agents/
@@ -40,8 +40,14 @@ meu_projeto_agentes/
 │   ├── planejador.py             # Agente que cria o plano de conteúdo
 │   ├── redator.py                # Agente que escreve o rascunho
 │   ├── revisor.py                # Agente que revisa e edita o texto
+│   ├── designer.py
+│   ├── narrador.py
+│   ├── resumidor.py
 │   ├── engajamento.py            # Agente que sugere frases de engajamento (opcional)
 │   └── chatgpt_api.py            # Integração com o ChatGPT via API (OpenAI)
+├── .gitignore # Ignora arquivos desnecessários ao versionamento
+├── LICENSE # Licença MIT
+├── README.md # Documentação do projeto
 ```
 
 ---
@@ -75,8 +81,8 @@ meu_projeto_agentes/
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/meu_projeto_agentes.git
-   cd meu_projeto_agentes
+   git clone https://github.com/seu-usuario/ViraliFy.git
+   cd ViraliFy
    ```
 
 2. **Crie e ative o ambiente virtual:**
@@ -140,7 +146,7 @@ meu_projeto_agentes/
 
 ## 🏆 Conclusão
 
-Este projeto é um ótimo exemplo de como **dividir responsabilidades entre agentes de IA** e integrá-los de forma orquestrada.  
+**ViraliFy** é um exemplo moderno de como dividir responsabilidades entre agentes de IA e integrá-los de forma orquestrada.  
 É como montar uma equipe criativa automática — cada agente faz sua parte, e o resultado é um conteúdo completo, bonito e funcional.  
 A arquitetura modular permite escalar facilmente e adaptar para novos desafios.
 
