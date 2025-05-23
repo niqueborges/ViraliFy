@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>ViraliFy</title>
+  <meta charset="UTF-8">
+  <title>ViraliFy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>🚀 ViraliFy — Criação de Posts com IA</h1>
-    <form method="post">
-        <label>Tópico:</label>
-        <input type="text" name="topico" required>
-        <button type="submit">Gerar Post</button>
-    </form>
+  <img src="{{ url_for('static', filename='logo.png') }}" alt="ViraliFy Logo" width="200">
 
-    {% if resultado %}
+  <h1>🚀 ViraliFy — Criação de Posts com IA</h1>
+
+  <form method="post">
+    <label><strong>Tópico:</strong></label><br>
+    <input type="text" name="topico" required><br>
+    <button type="submit">Gerar Post</button>
+  </form>
+
+  {% if resultado %}
     <h2>📝 Resultado</h2>
     <p><strong>Rascunho:</strong> {{ resultado.rascunho }}</p>
     <p><strong>Revisão:</strong> {{ resultado.revisao }}</p>
@@ -20,6 +24,6 @@
     <p><strong>Narração:</strong> {{ resultado.narracao }}</p>
     <p><strong>Resumo:</strong> {{ resultado.resumo }}</p>
     <p><strong>Engajamento:</strong> {{ resultado.engajamento }}</p>
-    {% endif %}
+  {% endif %}
 </body>
 </html>
