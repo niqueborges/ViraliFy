@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>ViraliFy</title>
+</head>
+<body>
+    <h1>🚀 ViraliFy — Criação de Posts com IA</h1>
+    <form method="post">
+        <label>Tópico:</label>
+        <input type="text" name="topico" required>
+        <button type="submit">Gerar Post</button>
+    </form>
+
+    {% if resultado %}
+    <h2>📝 Resultado</h2>
+    <p><strong>Rascunho:</strong> {{ resultado.rascunho }}</p>
+    <p><strong>Revisão:</strong> {{ resultado.revisao }}</p>
+    <p><strong>Visual:</strong> {{ resultado.visual }}</p>
+    <p><strong>Narração:</strong> {{ resultado.narracao }}</p>
+    <p><strong>Resumo:</strong> {{ resultado.resumo }}</p>
+    <p><strong>Engajamento:</strong> {{ resultado.engajamento }}</p>
+    {% endif %}
+</body>
+</html>
